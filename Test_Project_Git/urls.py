@@ -28,4 +28,5 @@ urlpatterns = [
     path('logout/', LogoutView.as_view(next_page='/'), name='logout'),
     path('admin/', admin.site.urls),
     path('myview/', views.myview, name='my'),
+    path('register/', views.register, name='register'),
 ]

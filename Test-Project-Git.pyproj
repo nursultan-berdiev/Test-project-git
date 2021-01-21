@@ -5,6 +5,7 @@
     <Name>Test-Project-Git</Name>
     <RootNamespace>Test-Project-Git</RootNamespace>
     <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+    <TestFramework>Pytest</TestFramework>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -56,7 +57,13 @@
     <Folder Include="Test_Project_Git\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include=".gitignore" />
     <Content Include="app\templates\app\my.html" />
+    <Content Include="app\templates\app\register.html" />
+    <Content Include="Errors.txt" />
+    <Content Include="readme.md">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />
     <Content Include="app\static\app\content\bootstrap.css" />
